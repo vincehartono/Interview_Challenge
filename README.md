@@ -25,4 +25,8 @@ By grouping the data by hour, it seems another pattern emerges. I can see that t
 I was given a task to design an experiement to track how efficient toll costs reimbursement in encouraging drivers from Gotham and Metropolis not to be exclusing in hailing passengers just in their respected city.
 
 The key measures of success that I would like to track for this experiment are:
-  1. 
+1. The number of toll reimbursements
+    The total costs that Ultimate needs to pay as additional expenses to see if is justified with the additional fees they received from more trips
+2. The number of drivers that hail passengers in the city the are not originated from and the number of trips per day they do
+
+
