@@ -35,4 +35,10 @@ The rollout of the program can be gradual in example, selected drivers with crit
 To measure the A/B testing, we can use the t-test to test for signifance (alpha = 0.05) between the control and treatment group. Our hypothesis can be that more drivers will work in both cities given the toll cost is reimbursed. In order for the test to have statistical significant, we need to have a large dataset thus I recommend testing the program at least for 6 months.
 
 After the test ended, the results can be:
-1. 
+1. Net profit < 0. The reason might be not many drivers get orders from the city they traveled to but incurred reimbursement to Ultimate. The program should not be continued.
+2. Net profit = 0. The additional income from fees that Ultimate generated can cover the reimbursement costs. Even though financially it does not makes sense financially, the program should be continued to have more flexibility in the number of drivers available in both cities.
+3. Net profit > 0. The program successfully increase the profit to the company as well as covering the demands for passengers in both cities.
+
+## Part 3 (Predictive Modeling)
+
+
