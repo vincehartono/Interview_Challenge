@@ -21,3 +21,8 @@ By grouping the data by hour, it seems another pattern emerges. I can see that t
 
 
 ## Part 2 (Experiment and Metrics Design)
+
+I was given a task to design an experiement to track how efficient toll costs reimbursement in encouraging drivers from Gotham and Metropolis not to be exclusing in hailing passengers just in their respected city.
+
+The key measures of success that I would like to track for this experiment are:
+  1. 
