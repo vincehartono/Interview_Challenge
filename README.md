@@ -41,4 +41,39 @@ After the test ended, the results can be:
 
 ## Part 3 (Predictive Modeling)
 
+In this part, I was given a dataset of users (in this case drivers) of Ultimate and was tasked to predict their user retention. The attached file ultimate_data_challenge consists of 12 columns with 50,000 rows of data.
 
+### Data Cleaning
+
+There are some null input on 3 columns:
+- avg_rating_of_driver: replaced the null with avg_rating_of_driver by number of trips in the first 30 days
+- phone: replace the null with 'Others'
+- avg_rating_by_driver: replaced the null with avg_rating_by_driver by number of trips in the first 30 days
+
+### Exploratory Data Analysis
+
+- 37.6% of the users are retained
+- Winterfell has the most trips
+- Most of the users are using iPhone
+
+### Predictive Modeling
+
+1. KNeighbors
+- 75.95% accuracy using best parameters by Grid Search Cross Validation method
+- Most important features by order of importance: weekday_pct, surge_pct, and avg_rating_by_driver
+
+2. Random Forests
+- 77.99% accuracy using best parameters by Randomized Search Cross Validation method
+- Most important features by order of importance: avg_rating_by_driver, weekday_pct, and surge_pct
+
+### Conclusion
+
+We see that using both KNeighbors and Random Forests, the 3 most important features to retain users are
+- weekday_pct
+- avg_rating_by_driver
+- surge_pct
+This means that the drivers that stay with Ultimate are the drivers that:
+1. mostly work on weekdays - working at Ultimate as their main source of income
+2. work during surge - generating the highest income to distance ratio
+3. have passengers with high ratings - having nice passengers when they are working
+In order to have long-term rider retention, Ultimate needs to focus these 3 things. They can create incentive for hailing passengers more than certain hours per week or make the surge more frequent. Also, they can filter out passengers with low ratings.
